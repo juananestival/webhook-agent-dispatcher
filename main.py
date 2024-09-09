@@ -51,8 +51,17 @@ def sample_wh():
   response_json = json.dumps(output)
   return response_json
   # return flask.jsonify({"results": "output"})
+
 @app.post("/nomatch")
 def nomatch():
+  # TODO: Aqui se implementa la lógica de la llamada a un motro de GenAI como Gemini
+  # En caso de que GenAI determine que hay una probabilidad alta de que sea un intent existente
+  # en Dialogflow se devolvería en el fullfillment del webhook.
+  # Los intents tienen que tener route groups para poder ser llamados desde cualquier parte del flujo
+  # Al estar en el sys no match está disponible en cualquier parte del flujo
+  # Tanto el texto como los chips abajo estan hard codeados pero serían rellenados por la respuesta
+  # de genai
+  
   data = request.get_json()
   print(f"data {data}")
   output = {
