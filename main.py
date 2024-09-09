@@ -132,7 +132,7 @@ def transition():
       "messages": [
         {
           "text": {
-            "text": ["I understand that you  want to compare accounts. Click on the button if that is the case or type a new search."]
+            "text": ["I understand that you  want to compare credit cards. Click on the button if that is the case or type a new search."]
             }
         },
         {
@@ -142,7 +142,7 @@ def transition():
                             {
                                 "type": "chips",
                                 "options": [
-                                    { "text": "I want to compare accounts" }
+                                    { "text": "I want to compare credit cards" }
 
                                 ]
                             }
