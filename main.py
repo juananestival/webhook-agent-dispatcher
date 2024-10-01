@@ -78,7 +78,7 @@ def nomatch():
       "messages": [
         {
           "text": {
-            "text": ["I understand that you  want to compare accounts. Click on the button if that is the case or type a new search."]
+            "text": ["Is this what you are looking for?."]
             }
         },
         {
